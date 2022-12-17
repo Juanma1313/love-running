@@ -9,18 +9,47 @@
 body {
     font-family: Lato, sans-serif;
     font-weight: 300;
-    color: #3a3a3a;
+    color: #3a3a3a;                         /* Sets dark sade of grey color because it makes good contrast with backgrond */
 }
 
 h1, h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #252525
+    color: #252525;                         /* Sets medium sade of grey color because it makes good contrast with backgrond */
 }
 
 #logo {
     float: left;
     font-size: 280%;
+}
 
+/*  Navigation links
+    ---------------     */
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+#menu, #logo {
+    line-height: 75px;                      /* Sets the virtual line for alignment (all allign heights are multiple of 75px as a design choice) */
+}
+
+#menu li {
+    float:right;
+    list-style-type: none;                  /* Removes bullets in list items */
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;                  /* Removes underline in links */
+    color: inherit;                         /* inherit the body element color (dark grey) but allows for any easy future color style change*/
+}
+
+#menu a:hover {                             
+    border-bottom: 1px solid #3a3a3a;     /* Draws a grey underline when we hover over a nav menu option.  TODO: check if color can be inherited */
+}
+
+.active {                             
+    border-bottom: 1px solid #3a3a3a;     /* Draws a grey underline when we hover over a nav menu option  TODO: check if color can be inherited */
 }
