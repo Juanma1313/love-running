@@ -217,7 +217,7 @@ footer {
     height: 150px;
 }
 
-.social-networks {
+.social-n {
     text-align: center;
 }
 
@@ -230,4 +230,16 @@ footer {
     margin: 1%;
     padding: 5%;
     color: #3a3a3a;
+}
+/* gallery */
+
+#photos {
+    clear: both;        /*The element is pushed below both left and right floated elements*/
+    line-height: 0;     /* Rid of vertical gaps between photos */
+    column-count: 4;
+    column-gap: 0;      /* Rid of horizontal gaps between photos */
+}
+
+#photos > img {
+    width: 100%;
 }
